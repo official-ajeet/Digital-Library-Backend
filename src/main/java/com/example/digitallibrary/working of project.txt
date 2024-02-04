@@ -1,0 +1,53 @@
+In the beginning a securedUser is created as an Admin
+        Authorities:- Can get any student details by using studentId.
+                   :- Create and get books.
+                   :- Can Add another admin.
+
+A Student can create his profile by entering his credentials.
+        Authorities:- By entering valid credentials
+                        :- Can update and delete only his account
+                        :- Issue and return the book
+                   :- Can get book details
+
+Functionalities:-
+
+Can search books by book name, author name, genre, id, pages.
+
+USED SPRING SECURITY FOR AUTHORIZATION AND AUTHENTICATION
+
+USED REDIS-CACHE TO RETRIEVE STUDENT DATA - data for admin by studentId
+1. First we check in the cache if the data available then return the data
+2. If data isn't cached then it fetches the corresponding data from database
+3. After fetching from database it sets to cache (updates cache)
+
+_______________________________________________________________________-
+
+Digital Library Project: A High-Tech Haven for Bookworms
+I'm excited to share my recent project - a digital library built with cutting-edge technologies to offer a seamless and engaging reading experience. Buckle up as I take you on a journey through the project's core features and the powerful tools behind them:
+
+Built with:
+
+Hibernate & JPA: For seamless persistence and object-relational mapping, ensuring smooth data interaction between the application and the MySQL database.
+Spring Security: Providing robust authentication and authorization, guaranteeing secure access to your personal bookshelf.
+Redis: High-performance caching to deliver lightning-fast book searches and information retrieval, making library navigation a breeze.
+REST APIs: Powering the backend and enabling communication with various client applications, ensuring flexible interaction.
+Lombok & Builder: Simplifying boilerplate code, making development efficient and elegant.
+Javax.persistence: Standardizing data access, promoting code portability and interoperability.
+Postman: For API testing and exploration, facilitating development and ensuring smooth API functionality.
+Maven: Managing dependencies and build automation, guaranteeing a reliable and reproducible build process.
+Key Features:
+
+Intuitive Interface: Browse through a vast collection of books, filter by genre, author, or publication date, and discover your next literary adventure.
+Personalized Library: Create your own bookshelf, add your favorite reads, and track your reading progress.
+Secure Access: Protect your reading preferences with secure login and authorization, safeguarding your literary haven.
+High-Speed Search: Search the library with blazing speed thanks to Redis caching, effortlessly finding that perfect book in a flash.
+RESTful API Integration: Easily integrate the library's functionality with other applications, expanding its reach and accessibility.
+Impact & Benefits:
+
+This project demonstrates my proficiency in a diverse range of technologies and highlights my ability to build modern, scalable, and user-friendly applications. It offers book lovers a convenient and personalized reading experience, fostering a love for literature and making knowledge readily accessible.
+
+Ready to Explore?
+
+I'm eager to share more about this project and its technical aspects. Don't hesitate to connect with me on LinkedIn to delve deeper into the technology stack and discuss potential collaborations. Let's build the future of reading, together!
+
+Bonus: Feel free to customize this template further by mentioning specific project challenges you overcame, innovative solutions you implemented, or key performance metrics achieved.
